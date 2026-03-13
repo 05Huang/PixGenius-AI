@@ -5,30 +5,23 @@
 
 # PixGenius AI
 
-一个开箱即用的 AI 智能图像创作平台。支持基于 ComfyUI 的本地 Stable Diffusion 文生图，以及接入阿里云百炼 DashScope 的云端生图；提供参数配置、进度回传、结果管理、登录与积分系统等完整能力。
+**简介**
+- 🎨 PixGenius AI：开箱即用的智能图像创作平台，支持本地 ComfyUI 与云端 DashScope；实时进度、参数可调、结果管理、登录与积分一站式搞定。
+- 🚀 基于 Spring Boot 3 + Vue 3 的前后端分离 AI 生图解决方案。默认对接 ComfyUI（本地 Stable Diffusion），也可一键切换到阿里云百炼 DashScope。内置任务队列与进度回传、提示词与采样器/步数/尺寸等参数配置、历史记录与下载、JWT 鉴权与站点访问密码、积分体系与人机验证，适合个人开发者与中小团队快速上线。
 
-## 目录
-- 项目简介
-- 核心功能
-- 技术栈
-- 快速开始
-- 项目结构
-- 配置与部署
-- 贡献指南
-- License
+**核心亮点**
+- 🖌️ 文生图 T2I：本地 SD/ComfyUI 或云端 DashScope 二选一  
+- ⚡ 实时进度：WebSocket 回传执行状态  
+- 🧰 可调参数：采样器/步数/CFG/尺寸/张数等  
+- 🗂️ 结果管理：历史记录、图片预览与下载  
+- 🔐 安全体系：JWT 登录、站点访问密码、人机验证  
+- 🧮 积分机制：可扩展的账户与扣费流程  
+- 🧩 易扩展：清晰的 Controller/Service/Mapper 分层与前端组件化
 
-## 项目简介
-- 面向个人开发者与中小团队的“前后端分离”AI 生图平台。
-- 后端基于 Spring Boot 3，前端基于 Vue3 + Vite，默认对接 ComfyUI，也可切换至 DashScope。
-
-## 核心功能
-- 文生图（Text-to-Image）：支持本地 Stable Diffusion/ComfyUI，或云端 DashScope。
-- 任务进度回传：后端通过 WebSocket 监听 ComfyUI，前端实时显示进度。
-- 提示词与参数配置：采样器、步数、尺寸、CFG 等可调。
-- 结果管理：历史任务查询、图片查看与下载。
-- 登录与鉴权：JWT 鉴权、中间件拦截、站点访问密码保护。
-- 账户积分：积分获取与扣减的业务流程。
-- 人机验证：接入阿里云验证码（可选）。
+**技术栈**
+- 🖥️ 后端：Java 17、Spring Boot 3、MyBatis-Plus、Redis/Redisson、Retrofit2、FreeMarker、WebSocket、MySQL  
+- 🖼️ 前端：Vue 3、TypeScript、Vite、Element Plus、Pinia、Axios、STOMP  
+- 🧱 基础设施：ComfyUI、Docker Compose（示例）
 
 ## 技术栈
 - 后端
