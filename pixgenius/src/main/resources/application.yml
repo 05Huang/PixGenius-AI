@@ -1,0 +1,32 @@
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    # 支持通过环境变量覆盖，便于不同环境部署
+    password: ${DB_PASSWORD:123456}
+    username: ${DB_USERNAME:root}
+    url: jdbc:mysql://${DB_HOST:localhost}:${DB_PORT:3306}/pixgenius?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+  data:
+    redis:
+      # 在 Docker/1Panel 中，请使用 Redis 容器名，而不是 localhost
+      # 你的 Redis 容器名目前是：1Panel-redis-vbLz（从 docker ps 看到的）
+      # 如有修改，可通过环境变量 REDIS_HOST 覆盖
+      host: ${REDIS_HOST:localhost}
+      port: ${REDIS_PORT:6379}
+      # password: redis_exNiwQ
+server:
+  port: 8080
+t2i:
+  sd-enabled: true
+dashscope:
+  api-key: sk-db198166dbb4439f96cd0e455bce9d5b
+aliyun:
+  captcha:
+    access-key-id: 
+    access-key-secret: 
+    scene-id: 1paou3fj
+
+# 网站访问密码配置
+site:
+  access:
+    password: ${SITE_PASSWORD:admin123}  # 默认密码为admin123，建议通过环境变量SITE_PASSWORD设置

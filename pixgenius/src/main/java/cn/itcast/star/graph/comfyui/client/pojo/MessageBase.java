@@ -1,0 +1,11 @@
+package cn.hx.pix.genius.comfyui.client.pojo;
+
+import lombok.Data;
+
+import java.util.HashMap;
+
+@Data
+public class MessageBase {
+    private String type;
+    private HashMap<String, Object> data;
+}

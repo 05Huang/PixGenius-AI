@@ -1,0 +1,69 @@
+# 操作系统
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# IDE/编辑器
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.classpath
+.project
+.settings/
+
+# 构建产物
+target/
+build/
+out/
+dist/
+# 打包产物（不提交编译产物）
+*.jar
+*.war
+*.ear
+
+# 依赖缓存（Gradle）
+.gradle/
+
+# 日志与运行时文件
+logs/
+*.log
+*.log.*
+*.pid
+
+# 覆盖率与测试报告
+coverage/
+.jacoco/
+jacoco.exec
+surefire-reports/
+failsafe-reports/
+
+# 临时/缓存文件
+tmp/
+temp/
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# 本地数据库文件
+*.db
+*.sqlite
+*.mv.db
+*.h2.db
+
+# 环境变量/密钥文件
+.env
+.env.*
+!.env.example
+
+# Spring Boot 本地配置（保留通用配置，忽略环境私有配置）
+application-local.*
+application-*.properties
+application-*.yml
+!application.properties
+!application.yml

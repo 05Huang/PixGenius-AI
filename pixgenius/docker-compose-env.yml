@@ -1,0 +1,30 @@
+version: "3.0"
+services:
+  "comfyui-422":
+    container_name: "comfyui-422"
+    ports:
+      - 8188:8188
+    volumes:
+      - /root/data/ComfyUI/custom_nodes:/root/data/ComfyUI/custom_nodes
+      - /root/data/ComfyUI/input:/root/data/ComfyUI/input
+      - /root/data/ComfyUI/output:/root/data/ComfyUI/output
+      - /root/data/ComfyUI/models:/root/data/ComfyUI/models
+    image: comfyui:0.0.2
+    network_mode: host
+  "mysql-422":
+    container_name: "mysql-422"
+    ports:
+      - 3306:3306
+    volumes:
+      - /root/data/mysql/data:/var/lib/mysql
+      - /root/data/mysql/my.cnf:/etc/mysql/my.cnf
+    environment:
+      - MYSQL_ROOT_PASSWORD=87sdhf298TYUUIz2!
+    image: mysql
+    network_mode: host
+  "redis-422":
+    container_name: "redis-422"
+    ports:
+      - 6379:6379
+    image: redis
+    network_mode: host
