@@ -2,6 +2,7 @@
   <img src="images/宣传图.jpg" alt="PixGenius 宣传图" width="800">
 </div>
 555~，手贱把main分支不小心删除了，之前的提交记录都没了，难受
+
 # PixGenius AI
 
 一个开箱即用的 AI 智能图像创作平台。支持基于 ComfyUI 的本地 Stable Diffusion 文生图，以及接入阿里云百炼 DashScope 的云端生图；提供参数配置、进度回传、结果管理、登录与积分系统等完整能力。
