@@ -4,7 +4,9 @@
 555~，手贱把main分支不小心删除了，之前的提交记录都没了，难受
 
 # PixGenius AI
-
+<div align="center">
+  <img src="images/首页.png" alt="PixGenius首页" width="800">
+</div>
 **简介**
 - 🎨 PixGenius AI：开箱即用的智能图像创作平台，支持本地 ComfyUI 与云端 DashScope；实时进度、参数可调、结果管理、登录与积分一站式搞定。
 - 🚀 基于 Spring Boot 3 + Vue 3 的前后端分离 AI 生图解决方案。默认对接 ComfyUI（本地 Stable Diffusion），也可一键切换到阿里云百炼 DashScope。内置任务队列与进度回传、提示词与采样器/步数/尺寸等参数配置、历史记录与下载、JWT 鉴权与站点访问密码、积分体系与人机验证，适合个人开发者与中小团队快速上线。
